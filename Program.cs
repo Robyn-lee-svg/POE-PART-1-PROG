@@ -6,18 +6,19 @@ public class CyberChatBot
 {
     static void Main()
     {
-
-    }
-
-        public void Start()
-    {
-        PlayVoiceGreeting();
+         PlayVoiceGreeting()
         ShowAsciiArt();
-        
-
+        Console.WriteLine("=================================================================================================");
+        Console.Write("\n Please enter your name: ");
+        string userName = Console.ReadLine();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine($"GoodDay, {userName}!Welcome to the Cybersecurity Awareness Bot, How may I assist you today? 🐶");
+        Console.ResetColor();
+        Console.WriteLine("=================================================================================================");
+        StartChat(userName);
     }
-
-    static void PlayVoiceGreeting()
+        
+     static void PlayVoiceGreeting()
     {
         try
         {
@@ -31,7 +32,7 @@ public class CyberChatBot
 
     }
 
-    private void ShowAsciiArt()
+    static void ShowAsciiArt()
     {
         Console.ForegroundColor = ConsoleColor.Green;
 
@@ -52,7 +53,7 @@ public class CyberChatBot
 
     }
 
-    private void GetUserName()
+    static void GetUserName()
     {
         Console.WriteLine("=========================================================================================");
         Console.Write("Please enter your name:");
