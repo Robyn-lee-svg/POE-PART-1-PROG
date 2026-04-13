@@ -53,16 +53,7 @@ public class CyberChatBot
 
     }
 
-    static void GetUserName()
-    {
-        Console.WriteLine("=========================================================================================");
-        Console.Write("Please enter your name:");
-        userName = Console.ReadLine();
-       TextHelper. TypeText($"GoodDay, {userName}!Welcome to the Cybersecurity Awareness Bot, How may I assist you today? 🐶");
-        Console.WriteLine("==========================================================================================");
-    }
-
-    static void StartChat(String UserName)
+   static void StartChat(String UserName)
     {
         String input;
 
